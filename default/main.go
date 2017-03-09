@@ -7,6 +7,6 @@ import (
 
 func init() {
     r := mux.NewRouter()
-    r.PathPrefix("/").Handler(http.FileServer(http.Dir("./static/")))
+    r.PathPrefix("/").Handler(http.FileServer(http.Dir("./static/dist")))
     http.Handle("/", r)
 }
