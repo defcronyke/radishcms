@@ -34,6 +34,8 @@ App Engine for the project.
 Install some backend dependencies:  
 	go get -u github.com/gorilla/mux  
 	go get -u github.com/gorilla/context  
+	go get -u google.golang.org/appengine/datastore
+	go get -u github.com/rs/cors
 
 Run the dev server for the backend. In the default folder:  
 	goapp serve app.yaml  
